@@ -1,0 +1,17 @@
+{
+  "name": "node-authorization-middleware",
+  "version": "1.0.0",
+  "description": "In this example application we implement authorization (AuthZ) middleware using Node, Express, and JSON Web Tokens (JWT).",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:dev": "npm install -g nodemon && nodemon app.js"
+  },
+  "keywords": ["Authorization", "AuthZ", "Access Control", "JSON Web Token", "JWT", "NodeJS", "Express"],
+  "author": "Brian Childress, brian@brianchildres.co",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
