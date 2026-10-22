@@ -22,6 +22,10 @@ app.get("/customer", authorize("customer:read"), (req, res) => {
   res.send("Customer Information");
 });
 
-const server = app.listen(port, () => {
-  console.log(`Server is listening on ${server.address().port}`);
-});
+if (require.main === module) {
+  const server = app.listen(port, () => {
+    console.log(`Server is listening on ${server.address().port}`);
+  });
+}
+
+module.exports = app;
